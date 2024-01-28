@@ -1,0 +1,9 @@
+version: '2'
+services:
+  webserver:
+    build:
+      context: .
+    ports:
+      - 5001:5000/tcp
+    volumes:
+      - ./:/app
